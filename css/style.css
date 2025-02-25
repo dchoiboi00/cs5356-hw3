@@ -313,12 +313,23 @@ header {
 }
 
 .services {
-    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+    place-content: center;
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service > ul {
+    text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -349,6 +360,12 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+.about-me__body {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 600px) {
@@ -451,6 +468,11 @@ header {
 
 .footer__link:hover {
     text-decoration: underline;
+}
+
+.footer__copyright {
+    margin-top: 1em;
+    font-size: var(--fs-body);
 }
 
 .social-list {
