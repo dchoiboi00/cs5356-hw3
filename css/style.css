@@ -508,3 +508,30 @@ header {
 .portfolio-item-individual img {
     margin: 0 auto;
 }
+
+/* Youtube Search */
+
+.video-container {
+    margin-top: 25px;
+}
+
+.video-container > h3 {
+    margin-bottom: 10px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 (height / width * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Optional: background color for better visibility */
+}
+
+.video-wrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
